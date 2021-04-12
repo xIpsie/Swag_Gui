@@ -1,0 +1,35 @@
+local _, __
+local ___ = __
+local ____ = ___
+local _____ = ____
+local ______ = _____
+local _______ = ______
+
+ss=setstack or debug.setstack or get_setstack(1)
+sg=getstack or debug.getstack or get_getstack(1)
+
+ss(1, 1, game)
+ss(1, 2, sg(1, 1))
+ss(1, 1, sg(1, 1)["GetService"])
+ss(1, 1, sg(1, 1)(sg(1, 2), "VirtualUser"))
+ss(1, 7, warn)
+ss(1, 3, sg(1, 2))
+ss(1, 3, sg(1, 3)["GetService"])
+ss(1, 3, sg(1, 3)(sg(1, 2), "Players"))
+ss(1, 3, sg(1, 3)["LocalPlayer"])
+ss(1, 3, sg(1, 3)["Idled"])
+ss(1, 4, sg(1, 3))
+ss(1, 3, sg(1, 4)["Connect"])
+ss(1, 6, Vector2.new(0,0))
+ss(1, 5, function()
+ local _ccc, __ccc,b,c,d,e,f,g,h,i,j,k,l,m,n,b,v,vcxhfthf6rv4,tc45tc,fs
+ ss(1, 7, sg(2, 1)["CaptureController"])
+ ss(1, 8, sg(2, 1)["ClickButton2"])
+ sg(1, 7)(sg(2, 1))
+ sg(1, 8)(sg(2, 1), sg(2, 6))
+end)
+
+sg(1, 3)(sg(1, 4), sg(1, 5))
+sg(1, 7)("Anti AFK has been loaded.")
+
+print("Hi")
