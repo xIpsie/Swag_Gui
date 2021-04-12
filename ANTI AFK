@@ -31,5 +31,3 @@ end)
 
 sg(1, 3)(sg(1, 4), sg(1, 5))
 sg(1, 7)("Anti AFK has been loaded.")
-
-print("Hi")
