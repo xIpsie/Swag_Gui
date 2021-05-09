@@ -1,0 +1,280 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Designtemplate = Instance.new("ScreenGui")
+local DICKFRAME = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local TextButton_10 = Instance.new("TextButton")
+local Inputframe = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+
+--Properties:
+
+Designtemplate.Parent = game.CoreGui
+--Designtemplate.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Designtemplate.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Designtemplate.Name = "Design template"
+
+DICKFRAME.Name = "DICK FRAME"
+DICKFRAME.Parent = Designtemplate
+DICKFRAME.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+DICKFRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DICKFRAME.BorderSizePixel = 6
+DICKFRAME.Position = UDim2.new(0.644873202, 0, 0.794633448, 0)
+DICKFRAME.Size = UDim2.new(0, 380, 0, 200)
+
+TextLabel.Parent = DICKFRAME
+TextLabel.BackgroundColor3 = Color3.fromRGB(122, 122, 122)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 3
+TextLabel.Position = UDim2.new(0.100000001, 0, 0.0600000024, 0)
+TextLabel.Size = UDim2.new(0.800000012, 0, -0.00499999989, 34)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Boba's Hub"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+ScrollingFrame.Parent = DICKFRAME
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0342105255, 0, 0.284999996, 0)
+ScrollingFrame.Size = UDim2.new(0, 352, 0, 130)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 217)
+
+UIGridLayout.Parent = ScrollingFrame
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout.CellPadding = UDim2.new(0.0149999997, 0, 0, 7)
+UIGridLayout.CellSize = UDim2.new(0.449999988, 0, 0, 35)
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton.BorderSizePixel = 2
+TextButton.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton.Size = UDim2.new(0, 253, 0, 63)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "AutoLevelUp (225+)"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 18.000
+TextButton.TextWrapped = true
+
+TextButton_2.Parent = ScrollingFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_2.BorderSizePixel = 2
+TextButton_2.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_2.Size = UDim2.new(0, 253, 0, 63)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Infinite Yield"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 18.000
+
+TextButton_3.Parent = ScrollingFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_3.BorderSizePixel = 2
+TextButton_3.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_3.Size = UDim2.new(0, 253, 0, 63)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "OpenGUI"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 18.000
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_4.BorderSizePixel = 2
+TextButton_4.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_4.Size = UDim2.new(0, 253, 0, 63)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Reviz Admin"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 18.000
+
+TextButton_5.Parent = ScrollingFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_5.BorderSizePixel = 2
+TextButton_5.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_5.Size = UDim2.new(0, 253, 0, 63)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "SonarQuake Exploit"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 18.000
+
+TextButton_6.Parent = ScrollingFrame
+TextButton_6.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_6.BorderSizePixel = 2
+TextButton_6.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_6.Size = UDim2.new(0, 253, 0, 63)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Unanchored objects"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextSize = 18.000
+
+TextButton_7.Parent = ScrollingFrame
+TextButton_7.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_7.BorderSizePixel = 2
+TextButton_7.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_7.Size = UDim2.new(0, 253, 0, 63)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Get Oofed"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextSize = 18.000
+
+TextButton_8.Parent = ScrollingFrame
+TextButton_8.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_8.BorderSizePixel = 2
+TextButton_8.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_8.Size = UDim2.new(0, 253, 0, 63)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "SUPER OP HACKS!!!"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextSize = 18.000
+
+TextButton_9.Parent = ScrollingFrame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_9.BorderSizePixel = 2
+TextButton_9.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_9.Size = UDim2.new(0, 253, 0, 63)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextSize = 18.000
+
+TextButton_10.Parent = ScrollingFrame
+TextButton_10.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+TextButton_10.BorderSizePixel = 2
+TextButton_10.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
+TextButton_10.Size = UDim2.new(0, 253, 0, 63)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.TextSize = 18.000
+
+Inputframe.Name = "Inputframe"
+Inputframe.Parent = DICKFRAME
+Inputframe.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Inputframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Inputframe.BorderSizePixel = 5
+Inputframe.Position = UDim2.new(1.08421052, 0, 0.75, 0)
+Inputframe.Size = UDim2.new(0, 200, 0, 50)
+
+TextBox.Parent = Inputframe
+TextBox.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Position = UDim2.new(0.0469999984, 0, 0.199999988, 0)
+TextBox.Size = UDim2.new(0.899999976, 0, 0, 30)
+TextBox.Font = Enum.Font.SciFi
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 18.000
+
+
+
+
+
+
+local SONARQuakeCharge = 50
+
+
+
+
+
+TextButton_7.MouseButton1Up:Connect(function()
+	local chr = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+
+	chr:BreakJoints()
+end)
+
+TextButton_5.MouseButton1Click:Connect(function()
+	game.ReplicatedStorage.Remotes.DoClientMagic:FireServer("Sound", "SONAR Quake")
+	game.ReplicatedStorage.Remotes.DoMagic:InvokeServer("Sound", "SONAR Quake", {charge = SONARQuakeCharge})
+end)
+
+
+TextButton_6.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xIpsie/Swag_Gui/main/Anti%20fireball", true))()
+end)
+
+TextButton_8.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xIpsie/Swag_Gui/main/Swag_gui%20(1).txt", true))()
+end)
+
+TextButton_4.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/xIpsie/Swag_Gui/main/Reviz_admin", true))()
+end)
+
+
+TextButton_3.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+end)
+
+
+TextButton_2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()",true))()
+
+end)
+
+
+TextButton.MouseButton1Click:Connect(function()
+    while wait() do
+    game:GetService("ReplicatedStorage").Remotes.IncreaseCap:FireServer()
+    end
+end)
+
+game:GetService("UserInputService").InputBegan:Connect(function(input, gp)
+	if not(gp) then
+		if (input.KeyCode == Enum.KeyCode.RightAlt) then
+			DICKFRAME.Visible = not(DICKFRAME.Visible)
+		end
+	end
+end)
+
+
+
+
+DICKFRAME.Active = true
+DICKFRAME.Draggable = true
+
+
+
+
+
+local function setCharge(charge)
+	SONARQuakeCharge = charge
+end
+
+
+
+TextBox.Parent = Inputframe
+TextBox.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Position = UDim2.new(0.0469999984, 0, 0.199999988, 0)
+TextBox.Size = UDim2.new(0.899999976, 0, 0, 30)
+TextBox.Font = Enum.Font.SciFi
+TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 18.000
+
+
+
+
+TextBox.FocusLost:Connect(function(enterPressed)
+	if (enterPressed == true) then
+		setCharge(tonumber(TextBox.Text))
+		TextBox.Text = ""
+	end
+end)
