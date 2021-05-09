@@ -1,280 +1,605 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local Designtemplate = Instance.new("ScreenGui")
-local DICKFRAME = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local UIGridLayout = Instance.new("UIGridLayout")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton")
-local TextButton_5 = Instance.new("TextButton")
-local TextButton_6 = Instance.new("TextButton")
-local TextButton_7 = Instance.new("TextButton")
-local TextButton_8 = Instance.new("TextButton")
-local TextButton_9 = Instance.new("TextButton")
-local TextButton_10 = Instance.new("TextButton")
-local Inputframe = Instance.new("Frame")
-local TextBox = Instance.new("TextBox")
-
---Properties:
-
-Designtemplate.Parent = game.CoreGui
---Designtemplate.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Designtemplate.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Designtemplate.Name = "Design template"
-
-DICKFRAME.Name = "DICK FRAME"
-DICKFRAME.Parent = Designtemplate
-DICKFRAME.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
-DICKFRAME.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DICKFRAME.BorderSizePixel = 6
-DICKFRAME.Position = UDim2.new(0.644873202, 0, 0.794633448, 0)
-DICKFRAME.Size = UDim2.new(0, 380, 0, 200)
-
-TextLabel.Parent = DICKFRAME
-TextLabel.BackgroundColor3 = Color3.fromRGB(122, 122, 122)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.BorderSizePixel = 3
-TextLabel.Position = UDim2.new(0.100000001, 0, 0.0600000024, 0)
-TextLabel.Size = UDim2.new(0.800000012, 0, -0.00499999989, 34)
-TextLabel.Font = Enum.Font.SciFi
-TextLabel.Text = "Boba's Hub"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextSize = 14.000
-
-ScrollingFrame.Parent = DICKFRAME
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
-ScrollingFrame.BackgroundTransparency = 1.000
-ScrollingFrame.BorderSizePixel = 0
-ScrollingFrame.Position = UDim2.new(0.0342105255, 0, 0.284999996, 0)
-ScrollingFrame.Size = UDim2.new(0, 352, 0, 130)
-ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 217)
-
-UIGridLayout.Parent = ScrollingFrame
-UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-UIGridLayout.CellPadding = UDim2.new(0.0149999997, 0, 0, 7)
-UIGridLayout.CellSize = UDim2.new(0.449999988, 0, 0, 35)
-
-TextButton.Parent = ScrollingFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton.BorderSizePixel = 2
-TextButton.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton.Size = UDim2.new(0, 253, 0, 63)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "AutoLevelUp (225+)"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 18.000
-TextButton.TextWrapped = true
-
-TextButton_2.Parent = ScrollingFrame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_2.BorderSizePixel = 2
-TextButton_2.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_2.Size = UDim2.new(0, 253, 0, 63)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Infinite Yield"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 18.000
-
-TextButton_3.Parent = ScrollingFrame
-TextButton_3.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_3.BorderSizePixel = 2
-TextButton_3.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_3.Size = UDim2.new(0, 253, 0, 63)
-TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "OpenGUI"
-TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_3.TextSize = 18.000
-
-TextButton_4.Parent = ScrollingFrame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_4.BorderSizePixel = 2
-TextButton_4.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_4.Size = UDim2.new(0, 253, 0, 63)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "Reviz Admin"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 18.000
-
-TextButton_5.Parent = ScrollingFrame
-TextButton_5.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_5.BorderSizePixel = 2
-TextButton_5.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_5.Size = UDim2.new(0, 253, 0, 63)
-TextButton_5.Font = Enum.Font.SourceSans
-TextButton_5.Text = "SonarQuake Exploit"
-TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_5.TextSize = 18.000
-
-TextButton_6.Parent = ScrollingFrame
-TextButton_6.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_6.BorderSizePixel = 2
-TextButton_6.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_6.Size = UDim2.new(0, 253, 0, 63)
-TextButton_6.Font = Enum.Font.SourceSans
-TextButton_6.Text = "Unanchored objects"
-TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_6.TextSize = 18.000
-
-TextButton_7.Parent = ScrollingFrame
-TextButton_7.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_7.BorderSizePixel = 2
-TextButton_7.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_7.Size = UDim2.new(0, 253, 0, 63)
-TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "Get Oofed"
-TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_7.TextSize = 18.000
-
-TextButton_8.Parent = ScrollingFrame
-TextButton_8.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_8.BorderSizePixel = 2
-TextButton_8.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_8.Size = UDim2.new(0, 253, 0, 63)
-TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.Text = "SUPER OP HACKS!!!"
-TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_8.TextSize = 18.000
-
-TextButton_9.Parent = ScrollingFrame
-TextButton_9.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_9.BorderSizePixel = 2
-TextButton_9.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_9.Size = UDim2.new(0, 253, 0, 63)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.TextSize = 18.000
-
-TextButton_10.Parent = ScrollingFrame
-TextButton_10.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
-TextButton_10.BorderSizePixel = 2
-TextButton_10.Position = UDim2.new(0.257954508, 0, 0.824423075, 0)
-TextButton_10.Size = UDim2.new(0, 253, 0, 63)
-TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.TextSize = 18.000
-
-Inputframe.Name = "Inputframe"
-Inputframe.Parent = DICKFRAME
-Inputframe.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
-Inputframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Inputframe.BorderSizePixel = 5
-Inputframe.Position = UDim2.new(1.08421052, 0, 0.75, 0)
-Inputframe.Size = UDim2.new(0, 200, 0, 50)
-
-TextBox.Parent = Inputframe
-TextBox.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.Position = UDim2.new(0.0469999984, 0, 0.199999988, 0)
-TextBox.Size = UDim2.new(0.899999976, 0, 0, 30)
-TextBox.Font = Enum.Font.SciFi
-TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextSize = 18.000
-
-
-
-
-
-
-local SONARQuakeCharge = 50
-
-
-
-
-
-TextButton_7.MouseButton1Up:Connect(function()
-	local chr = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
-
-	chr:BreakJoints()
+if not _G.ini then
+_G.ini = true
+ 
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://216917652"
+sound.Parent = game:GetService("SoundService")
+sound:Play()
+ 
+teleport = false
+ 
+wait()
+game.StarterGui:SetCore("SendNotification", {
+Title = "Unanchored To Player"; -- the title (ofc)
+Text = "GUI Loaded - F to Hide/Show"; -- what the text says (ofc)
+Duration = 5; -- how long the notification should in secounds
+})
+ 
+print "================UNANCHORED TO PLAYER LOADED================"
+print "================MADE BY TomQ#6764================"
+ 
+local heartbeat = game:GetService("RunService").Heartbeat
+spawn(function()
+    while true do heartbeat:Wait()
+    for i,v in pairs(game.Players:GetPlayers()) do
+        if v == game.Players.LocalPlayer == false then
+            game.Players.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge,math.huge)*math.huge
+            game.Players.LocalPlayer.SimulationRadius = math.pow(math.huge,math.huge)*math.huge
+            v.MaximumSimulationRadius = 0
+            v.SimulationRadius = 0
+            game:GetService("RunService").Stepped:wait()
+    end
+end
+end
 end)
-
-TextButton_5.MouseButton1Click:Connect(function()
-	game.ReplicatedStorage.Remotes.DoClientMagic:FireServer("Sound", "SONAR Quake")
-	game.ReplicatedStorage.Remotes.DoMagic:InvokeServer("Sound", "SONAR Quake", {charge = SONARQuakeCharge})
+ 
+local Imput = game:GetService("UserInputService")
+local Plr = game.Players.LocalPlayer
+local Mouse = Plr:GetMouse()
+ 
+function To(position)
+local Chr = Plr.Character
+local sound2 = Instance.new("Sound")
+sound2.SoundId = "rbxassetid://3398620867"
+sound2.Parent = game:GetService("SoundService")
+if Chr ~= nil then
+if teleport == false then
+for index, part in pairs(game:GetDescendants()) do
+if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
+    part.CFrame = CFrame.new(position) --TP Part To Mouse
+    sound2:Play()
+ 
+    if spam == true and part:FindFirstChild("BodyGyro") == nil then
+    local bodyPos = Instance.new("BodyPosition")
+    bodyPos.Position = part.Position
+    bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+    bodyPos.P = 1e6
+    bodyPos.Parent = part
+    end
+end
+end
+else
+ 
+    Chr:MoveTo(position)
+end
+end
+end
+ 
+ 
+ 
+ 
+ 
+Imput.InputBegan:Connect(function(input)
+   if input.UserInputType == Enum.UserInputType.MouseButton1 and Imput:IsKeyDown(Enum.KeyCode.LeftControl) then
+       To(Mouse.Hit.p)
+   end
 end)
-
-
-TextButton_6.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xIpsie/Swag_Gui/main/Anti%20fireball", true))()
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+-- key that opens/closes the ui
+local toggle_key = Enum.KeyCode.F
+ 
+-- function that executes desired code
+execute = function(name)
+ 
+ 
+ 
+    for index, part in pairs(game:GetDescendants()) do
+    if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
+    part.CFrame = CFrame.new(game.workspace[name].Head.Position) --TP Part To User
+    if spam == true and part:FindFirstChild("BodyGyro") == nil then
+    local bodyPos = Instance.new("BodyPosition")
+    bodyPos.Position = part.Position
+    bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+    bodyPos.P = 1e6
+    bodyPos.Parent = part
+    end
+    end
+    end
+ 
+ 
+ 
+end
+ 
+local uis = game:GetService("UserInputService")
+local ts = game:GetService("TweenService")
+ 
+-- ui functions
+fade = function(obj, len, props)
+	ts:Create(obj, TweenInfo.new(len, Enum.EasingStyle.Sine), props):Play()
+end
+ 
+-- shorthand variables
+local u2, c3 = UDim2.new, Color3.fromRGB
+local u2f, c3w = u2(1, 0, 1, 0), c3(255, 255, 255)
+ 
+-- ui init
+local g = Instance.new("ScreenGui", game.CoreGui)
+local f = Instance.new("Frame", g)
+local t = Instance.new("TextLabel", f)
+local c = Instance.new("ScrollingFrame", f)
+ 
+-- core ui styling
+local padding = Instance.new("UIPadding", f)
+local maxsize = Instance.new("UISizeConstraint", f)
+local textsize = Instance.new("UITextSizeConstraint", t)
+local listcons = Instance.new("UIListLayout", c)
+ 
+padding.PaddingBottom = UDim.new(0, 8)
+padding.PaddingLeft = UDim.new(0, 15)
+padding.PaddingRight = UDim.new(0, 15)
+padding.PaddingTop = UDim.new(0, 0)
+ 
+maxsize.MaxSize = Vector2.new(275, 450)
+maxsize.MinSize = Vector2.new(200, 0)
+textsize.MaxTextSize = 16
+listcons.Padding = UDim.new(0, 3)
+ 
+-- ui instance properties
+g.Name = "unanchor_ui"
+g.ResetOnSpawn = false
+f.Name = "main"
+t.Name = "header"
+ 
+f.Size = u2(0.165, 0, 0.6, 0)
+f.BorderSizePixel = 0
+f.BackgroundTransparency = 0.3
+f.Position = u2(1, -215, 0.5, -150)
+f.BackgroundColor3 = c3()
+f.AnchorPoint = Vector2.new(1, 0.5)
+f.Position = u2(1, -15, 0.5, 0)
+ 
+t.Size = u2(1, 0, 0.1, 0)
+t.BackgroundTransparency = 1
+t.TextColor3 = c3w
+t.Font = Enum.Font.GothamBold
+t.TextScaled = true
+t.TextXAlignment = Enum.TextXAlignment.Center
+t.Text = "UNANCHORED TO PLAYER BY TomQ#6764"
+ 
+c.Name = "playerlist"
+c.Position = u2(0, 0, 0.1, 0)
+c.Size = u2(1, 0, 0.45, 0)
+c.BackgroundTransparency = 1
+c.BorderSizePixel = 0
+c.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+c.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+c.ScrollingDirection = Enum.ScrollingDirection.Y
+c.ScrollBarThickness = 5
+c.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ 
+-- playerlist entry ui template
+local temp = Instance.new("Frame", f)
+temp.Name = "temp"
+temp.Visible = false
+temp.Size = u2(1, -5, 0, 27)
+temp.BackgroundTransparency = 0.5
+temp.BorderSizePixel = 0
+temp.ClipsDescendants = true
+temp.BackgroundColor3 = c3()
+ 
+local tpad = Instance.new("UIPadding", temp)
+tpad.PaddingLeft = UDim.new(0, 5)
+tpad.PaddingRight = UDim.new(0, 5)
+ 
+local tb = Instance.new("TextButton", temp)
+tb.Name = "button"
+tb.BackgroundTransparency = 1
+tb.ZIndex = 5
+tb.BorderSizePixel = 0
+tb.Text = ""
+tb.Size = u2(1, 10, 1, 0)
+tb.Position = u2(0, -5, 0, 0)
+ 
+local tcl = Instance.new("TextLabel", temp)
+tcl.Name = "username"
+tcl.BackgroundTransparency = 1
+tcl.BorderSizePixel = 0
+tcl.Size = u2f
+tcl.TextColor3 = c3w
+tcl.TextXAlignment = Enum.TextXAlignment.Left
+tcl.TextScaled = true
+tcl.Size = u2(0.6, 0, 1, 0)
+tcl.Font = Enum.Font.Gotham
+ 
+local tcls = Instance.new("UITextSizeConstraint", tcl)
+tcls.MaxTextSize = 14
+ 
+local thumb = Instance.new("ImageLabel", temp)
+thumb.Name = "thumb"
+thumb.Size = u2(0.35, 0, 0.35, 0)
+thumb.SizeConstraint = Enum.SizeConstraint.RelativeXX
+thumb.Position = u2(1, 0, 0, -15)
+thumb.AnchorPoint = Vector2.new(1, 0)
+thumb.BackgroundTransparency = 1
+thumb.BorderSizePixel = 0
+ 
+-- settings ui
+local sh = Instance.new("TextLabel", f)
+sh.Name = "settings_header"
+sh.Size = u2(1, 0, 0.1, 0)
+sh.Position = u2(0, 0, 0.55, 0)
+sh.BackgroundTransparency = 1
+sh.BorderSizePixel = 0
+sh.ZIndex = 3
+sh.TextColor3 = c3w
+sh.Font = Enum.Font.GothamBold
+sh.TextScaled = true
+sh.TextXAlignment = Enum.TextXAlignment.Center
+sh.Text = "SETTINGS"
+ 
+local shs = Instance.new("UITextSizeConstraint", sh)
+shs.MaxTextSize = 16
+ 
+local items = Instance.new("ScrollingFrame", f)
+items.Name = "items"
+items.Size = u2(1, 0, 0.35, 0)
+items.Position = u2(0, 0, 0.65, 0)
+items.BackgroundTransparency = 1
+items.BorderSizePixel = 0
+items.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+items.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+items.ScrollingDirection = Enum.ScrollingDirection.Y
+items.ScrollBarThickness = 5
+items.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ 
+local itemll = Instance.new("UIListLayout", items)
+itemll.Padding = UDim.new(0, 3)
+ 
+createSetting = function(name)
+	local setting = Instance.new("Frame", items)
+	setting.Size = u2(1, -5, 0, 27)
+	setting.BackgroundColor3 = c3()
+	setting.BackgroundTransparency = 0.5
+	setting.BorderSizePixel = 0
+ 
+	local spad = tpad:Clone()
+	spad.Parent = setting
+ 
+	local slab = tcl:Clone()
+	slab.Name = "label"
+	slab.Parent = setting
+	slab.Size = u2(1, 0, 1, 0)
+	slab.Text = name
+ 
+	local stbt = tb:Clone()
+	stbt.Parent = setting
+ 
+	stbt.MouseEnter:connect(function()
+		fade(setting, 0.25, {BackgroundTransparency = 0.8})
+	end)
+ 
+	stbt.MouseLeave:connect(function()
+		fade(setting, 0.25, {BackgroundTransparency = 0.5})
+	end)
+ 
+	items.CanvasSize = u2(0, 0, 0, itemll.AbsoluteContentSize.Y)
+ 
+	return stbt
+end
+ 
+ 
+-- settings & functionality
+ 
+ 
+ 
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://179235828"
+    sound.Parent = game:GetService("SoundService")
+ 
+ 
+spam = false
+local spamblocks = createSetting("Spam Parts")
+spamblocks.MouseButton1Down:connect(function()
+spam = not spam
+   if spam then
+       fade(spamblocks.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
+       sound:Play()
+       -- code to loop here
+   else
+       fade(spamblocks.Parent.label, 0.25, {TextColor3 = c3w})
+       sound:Play()
+       -- code to break the loop here
+   end
 end)
-
-TextButton_8.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xIpsie/Swag_Gui/main/Swag_gui%20(1).txt", true))()
+ 
+ 
+ 
+createSetting("Break Spam").MouseButton1Down:connect(function()
+    for index, part in pairs(game:GetDescendants()) do
+    if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
+    sound:Play()
+    if part:FindFirstChild("BodyForce") then
+    part.BodyForce:Destroy()
+    end
+ 
+    if part:FindFirstChild("BodyGyro") then
+    part.BodyGyro:Destroy()
+    end
+ 
+    if part:FindFirstChild("BodyPosition") then
+    part.BodyPosition:Destroy()
+    end
+ 
+    if part:FindFirstChild("BodyThrust") then
+    part.BodyThrust:Destroy()
+    end
+end
+end
 end)
-
-TextButton_4.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/xIpsie/Swag_Gui/main/Reviz_admin", true))()
+ 
+freeze = false
+local freezeblocks = createSetting("Freeze Parts")
+freezeblocks.MouseButton1Down:connect(function()
+freeze = not freeze
+    if freeze then
+        fade(freezeblocks.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
+        sound:Play()
+        print "UTP: Freezed Parts"
+        for _,part in pairs(workspace:GetChildren()) do
+        if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
+            local bodyPos = Instance.new("BodyPosition")
+            bodyPos.Position = part.Position
+            bodyPos.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+            bodyPos.P = 1e6
+            bodyPos.Parent = part
+        end
+        end
+    else
+        fade(freezeblocks.Parent.label, 0.25, {TextColor3 = c3w})
+        sound:Play()
+        print "UTP: Thawed Parts"
+        for _,part in pairs(workspace:GetChildren()) do
+        if part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then --// Checks Part Properties
+            if part:FindFirstChild("BodyPosition") then
+            part.BodyPosition:Destroy()
+            end
+        end
+       -- code to break the loop here
+end
+end
 end)
-
-
-TextButton_3.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/UXmbai5q", true))()
+ 
+local teleportplr = createSetting("Teleport Mode")
+teleportplr.MouseButton1Down:connect(function()
+teleport = not teleport
+    if teleport then
+        fade(teleportplr.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
+        sound:Play()
+    else
+        fade(teleportplr.Parent.label, 0.25, {TextColor3 = c3w})
+        sound:Play()
+       -- code to break the loop here
+ 
+end
 end)
-
-
-TextButton_2.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()",true))()
-
-end)
-
-
-TextButton.MouseButton1Click:Connect(function()
-    while wait() do
-    game:GetService("ReplicatedStorage").Remotes.IncreaseCap:FireServer()
+ 
+createSetting("Remove Accessories Mesh").MouseButton1Down:connect(function()
+    sound:Play()
+ 
+    local plr = game:GetService("Players").LocalPlayer
+    local char = plr.Character
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") and v.Handle:FindFirstChild("SpecialMesh") then
+    ag = v.Handle:FindFirstChild("SpecialMesh")
+    ag:Destroy()
+    end
+    end
+ 
+ 
+    local plr = game:GetService("Players").LocalPlayer
+    local char = plr.Character
+    for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Accessory") and v.Handle:FindFirstChild("Mesh") then
+    ag = v.Handle:FindFirstChild("Mesh")
+    ag:Destroy()
+    end
     end
 end)
-
-game:GetService("UserInputService").InputBegan:Connect(function(input, gp)
-	if not(gp) then
-		if (input.KeyCode == Enum.KeyCode.RightAlt) then
-			DICKFRAME.Visible = not(DICKFRAME.Visible)
+ 
+createSetting("Drop Accessories").MouseButton1Down:connect(function()
+    sound:Play()
+	for _,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+		if v:IsA("Accessory") then
+            v.Handle.Parent = workspace
+			v.Parent = workspace
 		end
 	end
 end)
-
-
-
-
-DICKFRAME.Active = true
-DICKFRAME.Draggable = true
-
-
-
-
-
-local function setCharge(charge)
-	SONARQuakeCharge = charge
+ 
+createSetting("Reset").MouseButton1Down:connect(function()
+    sound:Play()
+	game.Players.LocalPlayer.Character:BreakJoints()
+end)
+ 
+ 
+highlight = false
+local highlights = createSetting("Highlight Unanchored")
+highlights.MouseButton1Down:connect(function()
+highlight = not highlight
+    if highlight then
+        fade(highlights.Parent.label, 0.25, {TextColor3 = c3(52, 189, 98)})
+        sound:Play()
+        print "UTP: Unanchored Highlighted"
+        for _,part in pairs(workspace:GetDescendants()) do
+        if part:IsA("BasePart") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false and part:FindFirstChild("Weld") == nil then --// Checks Part Properties
+            local selectionBox = Instance.new("SelectionBox")
+            selectionBox.Adornee = part
+            selectionBox.Color3 = Color3.new(1,0,0)
+            selectionBox.Parent = part
+        end
+        end
+    else
+        fade(highlights.Parent.label, 0.25, {TextColor3 = c3w})
+        sound:Play()
+        print "UTP: Unanchored Un-Highlighted"
+        for _,part in pairs(workspace:GetDescendants()) do
+        if part:IsA("BasePart") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false and part:FindFirstChild("Weld") == nil then --// Checks Part Properties
+            if part:FindFirstChild("SelectionBox") then
+            part.SelectionBox:Destroy()
+            end
+        end
 end
-
-
-
-TextBox.Parent = Inputframe
-TextBox.BackgroundColor3 = Color3.fromRGB(118, 118, 118)
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.Position = UDim2.new(0.0469999984, 0, 0.199999988, 0)
-TextBox.Size = UDim2.new(0.899999976, 0, 0, 30)
-TextBox.Font = Enum.Font.SciFi
-TextBox.PlaceholderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextSize = 18.000
-
-
-
-
-TextBox.FocusLost:Connect(function(enterPressed)
-	if (enterPressed == true) then
-		setCharge(tonumber(TextBox.Text))
-		TextBox.Text = ""
+end
+end)
+ 
+createSetting("Check Other Players").MouseButton1Down:connect(function()
+    sound:Play()
+    g = 0
+    spawn(function()
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.SimulationRadius > 5555 then
+                g = g + 1
+                print(v.Name, "is using Unanchored To Player")
+                game:GetService("RunService").Stepped:wait()
+ 
+        end
+    end
+    print ("Checked all players, found", g ,"using Unanchored To Player")
+    end)
+end)
+ 
+createSetting("Count Unanchored Parts").MouseButton1Down:connect(function()
+    sound:Play()
+    b = 0
+    for index, part in pairs(game.workspace:GetDescendants()) do
+    if part:IsA("BasePart") and part.Anchored == false and part:IsDescendantOf(game.Players.LocalPlayer.Character) == false and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false and part:FindFirstChild("Weld") == nil then --// Checks Part Properties
+        b = b + 1
+    end
+    end
+    print ("All parts checked, found", b ,"that are unanchored")
+end)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+createEntry = function(name, id)
+	local entry = temp:Clone()
+	entry.Parent = c
+	entry.username.Text = name
+	entry.thumb.Image = game:GetService("Players"):GetUserThumbnailAsync(id, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
+	entry.Visible = true
+	entry.LayoutOrder = #c:GetChildren()
+	entry.Name = name
+ 
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://3398620867"
+    sound.Parent = game:GetService("SoundService")
+	-- handle clicking for player
+	entry.button.MouseButton1Down:connect(function()
+		execute(name)
+        sound:Play()
+	end)
+ 
+	entry.button.MouseEnter:connect(function()
+		fade(entry, 0.25, {BackgroundTransparency = 0.8})
+	end)
+ 
+	entry.button.MouseLeave:connect(function()
+		fade(entry, 0.25, {BackgroundTransparency = 0.5})
+	end)
+end
+ 
+deleteEntry = function(name)
+	for _,v in pairs(c:GetChildren()) do
+		if v.Name == name then
+			v:Destroy()
+		end
+	end
+end
+ 
+-- create entry for client
+createEntry(game.Players.LocalPlayer.Name, game.Players.LocalPlayer.UserId)
+ 
+-- create entries for all other players
+for _,v in pairs(game.Players:GetPlayers()) do
+	if v ~= game.Players.LocalPlayer then
+		createEntry(v.Name, v.UserId)
+	end
+end
+ 
+listcons:GetPropertyChangedSignal("AbsoluteContentSize"):connect(function()
+	c.CanvasSize = u2(0, 0, 0, listcons.AbsoluteContentSize.Y)
+end)
+ 
+itemll:GetPropertyChangedSignal("AbsoluteContentSize"):connect(function()
+	items.CanvasSize = u2(0, 0, 0, itemll.AbsoluteContentSize.Y)
+end)
+ 
+uis.InputBegan:connect(function(input, gpe)
+	if not gpe then
+		if input.KeyCode == toggle_key then
+			g.Enabled = not g.Enabled
+		end
 	end
 end)
+ 
+-- dragging code, ripped from https://devforum.roblox.com/t/draggable-property-is-hidden-on-gui-objects/107689/5
+local dragging
+local dragInput
+local dragStart
+local startPos
+ 
+local function update(input)
+	local delta = input.Position - dragStart
+	f.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+ 
+f.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = f.Position
+ 
+		input.Changed:Connect(function()
+			if input.UserInputState == Enum.UserInputState.End then
+				dragging = false
+			end
+		end)
+	end
+end)
+ 
+f.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+		dragInput = input
+	end
+end)
+ 
+uis.InputChanged:Connect(function(input)
+	if input == dragInput and dragging then
+		update(input)
+	end
+end)
+ 
+game.Players.PlayerAdded:connect(function(plr)
+	createEntry(plr.Name, plr.UserId)
+end)
+ 
+game.Players.PlayerRemoving:connect(function(plr)
+	deleteEntry(plr.Name)
+end)
+else
+print "================ALREADY LOADED================"
+ 
+ 
+ 
+    local sound = Instance.new("Sound")
+    sound.SoundId = "rbxassetid://2130284653"
+    sound.Parent = game:GetService("SoundService")
+sound:Play()
+ 
+game.StarterGui:SetCore("SendNotification", {
+Title = "Already Loaded"; -- the title (ofc)
+Text = "GUI Already Loaded"; -- what the text says (ofc)
+Duration = 5; -- how long the notification should in secounds
+})
+end
